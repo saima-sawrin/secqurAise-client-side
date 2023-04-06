@@ -22,7 +22,7 @@ const router = createBrowserRouter([
           // },
           {
             path:'/events/:id',
-            loader:({params})=>fetch(`http://localhost:5000/events/${params.id}`),
+            loader:({params})=>fetch(`https://assignment-server-side-three.vercel.app/events/${params.id}`),
             element: <LeftSide></LeftSide>
           }
           

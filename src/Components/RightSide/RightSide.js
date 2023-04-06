@@ -6,7 +6,7 @@ import Header from '../Shared/Header';
 const RightSide = () => {
     const [events , setEvents] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/events')
+        fetch('https://assignment-server-side-three.vercel.app/events')
         .then(res => res.json())
         .then(data => setEvents(data))
       },[])
